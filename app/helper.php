@@ -12,7 +12,7 @@ if (!function_exists("panel_image"))
 {
     function panel_image(string $image , string $folder) : string
     {
-        $panel_address = env("PANEL_ADDRESS" , "http://aipcdata:4000");
+        $panel_address = env("PANEL_ADDRESS" , "http://aipcdata.com:4000");
         return $panel_address."/storage/$folder/$image";
     }
 
