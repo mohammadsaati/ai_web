@@ -17,3 +17,11 @@ if (!function_exists("panel_image"))
     }
 
 }
+
+if (!function_exists("my_heloo"))
+{
+    function my_heloo()
+    {
+
+    }
+}
