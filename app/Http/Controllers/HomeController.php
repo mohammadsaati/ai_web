@@ -14,7 +14,9 @@ class HomeController extends Controller
     {
     }
 
-
+    /*
+     * show home data
+     */
     public function home()
     {
         $data                   =   $this->service->homeData();
