@@ -21,7 +21,7 @@
                     <!-- Sponsored Post -->
 
                     <h4 class="card-title mt-2"><a href="{{ route('post.show' , $resentPost->slug) }}" class="btn-link text-reset">{{ $resentPost->title }}</a></h4>
-                    <p class="card-text">{!! \Illuminate\Support\Str::of($resentPost->description)->limit(100) !!}</p>
+                    <p class="card-text"></p>
                     <!-- Card info -->
                    {{-- <ul class="nav nav-divider align-items-center d-none d-sm-inline-block">
                         <li class="nav-item">
