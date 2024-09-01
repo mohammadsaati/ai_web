@@ -27,6 +27,11 @@ class Post extends Model
         return $this->belongsTo(ContentType::class , "content_type_id");
     }
 
+    public function admin()
+    {
+        return $this->belongsTo(Admin::class, 'admin_id');
+    }
+
     /************************************
      * *********** #Scope ***************
      ************** START ***************/
