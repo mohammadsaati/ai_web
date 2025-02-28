@@ -23,8 +23,6 @@ class PostController extends Controller
         $data['post']           = $post;
         $data['relatedPosts']   = $this->service->relatedPosts($post)->get();
 
-
-
         return view(self::SHOW , compact('data'));
     }
 

@@ -36,13 +36,13 @@
                                 <img class="avatar-img rounded-circle" src="{{ asset('assets/images/user-avatar.avif') }}" alt="avatar">
                             </div>
                             <a href="#" class="h5 stretched-link mt-2 mb-0 d-block">{{ $data['post']->admin->name }}</a>
-                            <p>ادمین</p>
+                            <p>admin</p>
                         </div>
                         <hr class="d-none d-lg-block">
                         <!-- Card info -->
                         <ul class="list-inline list-unstyled">
-                            <li class="list-inline-item d-lg-block my-lg-2">{{ verta($data['post']->created_at)->format('l dS F') }}</li>
-                            <li class="list-inline-item d-lg-block my-lg-2">{{ $data['post']->read_time }} زمان مطالعه</li>
+                            <li class="list-inline-item d-lg-block my-lg-2">{{ $data['post']->created_at }}</li>
+                            <li class="list-inline-item d-lg-block my-lg-2">{{ $data['post']->read_time }} read</li>
                         </ul>
                     </div>
                 </div>
