@@ -2,7 +2,7 @@
 * Blogzine - Blog and Magazine Bootstrap 5 Theme
 *
 * @author Webestica (https://www.webestica.com/)
-* @version 1.2.0
+* @version 1.3.0
 **/
 
 
@@ -22,14 +22,13 @@ Table Of Content
 11 STICKY FOOTER
 12 GLIGHTBOX
 13 ISOTOPE
-14 DARK MODE
-15 FONT SIZE
-16 LAZY LOAD
-17 QUILL EDITOR
-18 VIDEO PLAYER
-19 OVERLAY SCROLLBAR
-20 DASHBOARD CHART
-21 TRAFFIC CHART
+14 FONT SIZE
+15 LAZY LOAD
+16 QUILL EDITOR
+17 VIDEO PLAYER
+18 OVERLAY SCROLLBAR
+19 DASHBOARD CHART
+20 TRAFFIC CHART
 ====================== */
 
 "use strict";
@@ -324,7 +323,7 @@ var e = {
               var sliderHoverPause = slider1.getAttribute('data-hoverpause') === 'true'; //option: true or false
               if (e.isVariableDefined(e.select('.custom-thumb'))) {
                 var sliderNavContainer = e.select('.custom-thumb');
-              } 
+              }
               var sliderLoop = slider1.getAttribute('data-loop') !== 'false'; //option: true or false
               var sliderRewind = slider1.getAttribute('data-rewind') === 'true'; //option: true or false
               var sliderAutoHeight = slider1.getAttribute('data-autoheight') === 'true'; //option: true or false
@@ -390,7 +389,7 @@ var e = {
                       }
                   }
               });
-          }); 
+          });
         }
     },
     // END: Tiny Slider
@@ -525,8 +524,7 @@ var e = {
                     var gridItemDataObj = JSON.parse(gridItemData);
                     var iso = new Isotope(gridItem, {
                         itemSelector: '.grid-item',
-                        layoutMode: gridItemDataObj.layoutMode,
-						isOriginLeft: false
+                        layoutMode: gridItemDataObj.layoutMode
                     });
 
                     imagesLoaded(gridItem).on('progress', function () {
@@ -549,8 +547,7 @@ var e = {
                     var filter = new Isotope(filterContainer, {
                         itemSelector: '.grid-item',
                         transitionDuration: '0.7s',
-                        layoutMode: filterContainerItemDataObj.layoutMode,
-						isOriginLeft: false
+                        layoutMode: filterContainerItemDataObj.layoutMode
                     });
 
                     var menuItems = menu.querySelectorAll('li a');
@@ -573,7 +570,7 @@ var e = {
     },
     // END: Isotope
 
-    // START: 15 Font size
+    // START: 14 Font size
     zooming: function () {
       const doc = document.documentElement;
       var radios = document.querySelectorAll('input[type=radio][name="fntradio"]');
@@ -594,7 +591,7 @@ var e = {
     },
     // END: Font size
 
-    // START: 16 Lazy Load
+    // START: 15 Lazy Load
     lazyLoading: function () {
         var lazLoad = e.select('.lazy');
         if (e.isVariableDefined(lazLoad)) {
@@ -604,7 +601,7 @@ var e = {
     },
     // END: Lazy Load
 
-    // START: 17 Quill Editor
+    // START: 16 Quill Editor
     quill: function () {
       var ql = e.select('#quilleditor');
       if (e.isVariableDefined(ql)) {
@@ -616,7 +613,7 @@ var e = {
     },
     // END: Quill Editor
 
-  // START: 18 Video player
+  // START: 17 Video player
   videoPlyr: function () {
     var vdp = e.select('.player-wrapper');
     if (e.isVariableDefined(vdp)) {
@@ -627,7 +624,7 @@ var e = {
       // Vimeo
       const playerVimeo = Plyr.setup('.player-vimeo', {});
       window.player = playerVimeo;
-      
+
       // HTML video
       const playerHtmlvideo = Plyr.setup('.player-html', {
         captions: {active: true}
@@ -641,7 +638,7 @@ var e = {
   },
   // END: Video player
 
-  // START: 19 Overlay scrollbar
+  // START: 18 Overlay scrollbar
   overlayScrollbars: function () {
     var os = e.select('.custom-scrollbar');
     if (os) {
@@ -664,7 +661,7 @@ var e = {
   },
   // END: Overlay scrollbar
 
-  // START: 20 Dashboard Chart
+  // START: 19 Dashboard Chart
   trafficsourcesChart: function () {
     var ac = e.select('#apexChartTrafficSources');
     if (e.isVariableDefined(ac)) {
@@ -717,7 +714,7 @@ var e = {
   },
   // END: Dashboard Chart
 
-  // START: 21 Traffic Chart
+  // START: 20 Traffic Chart
   trafficstatsChart: function () {
     var cpv = e.select('#apexChartTrafficStats');
     if (e.isVariableDefined(cpv)) {
@@ -726,7 +723,7 @@ var e = {
           '#2163e8',
         ],
         series: [{
-          name: 'کاربران',
+          name: 'Users',
           data: [100, 401, 305, 501, 409, 602, 609, 901, 848, 602, 809, 901]
         }],
         chart: {
@@ -764,7 +761,7 @@ var e = {
           axisBorder: {
             show: false
           },
-          categories: ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور', 'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند']
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         },
         tooltip: {
           x: {
@@ -776,9 +773,7 @@ var e = {
       chart.render();
     }
   },
-  // END: Traffic Chart   
+  // END: Traffic Chart
 
 };
 e.init();
-
-   

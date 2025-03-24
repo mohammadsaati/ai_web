@@ -8,21 +8,21 @@
                 <a href="#" class="bg-facebook rounded text-center text-white-force p-3 d-block">
                     <i class="fab fa-facebook-square fs-5 mb-2"></i>
                     <h6 class="m-0">1.5K</h6>
-                    <span class="small">طرفدار</span>
+                    <span class="small">Fans</span>
                 </a>
             </div>
             <div class="col-4">
                 <a href="#" class="bg-instagram-gradient rounded text-center text-white-force p-3 d-block">
                     <i class="fab fa-instagram fs-5 mb-2"></i>
                     <h6 class="m-0">1.8M</h6>
-                    <span class="small">حامیان</span>
+                    <span class="small">Follower</span>
                 </a>
             </div>
             <div class="col-4">
                 <a href="#" class="bg-youtube rounded text-center text-white-force p-3 d-block">
                     <i class="fab fa-youtube-square fs-5 mb-2"></i>
                     <h6 class="m-0">22K</h6>
-                    <span class="small">بازدید</span>
+                    <span class="small">View</span>
                 </a>
             </div>
         </div>
@@ -30,7 +30,7 @@
 
         <!-- Trending topics widget START -->
         <div>
-            <h4 class="mt-4 mb-3">برگزیده ها</h4>
+            <h4 class="mt-4 mb-3">Trending topics</h4>
             @foreach($data['randomCats'] as $cat)
                 <!-- Category item -->
                 <div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded bg-dark-overlay-4 " style="background-image:url('{{ imagePath('categories/').$cat->image }}'); background-position: center left; background-size: cover;">

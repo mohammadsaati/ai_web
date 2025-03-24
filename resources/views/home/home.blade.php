@@ -7,11 +7,6 @@
         @include('home._banners' , $data['banners'])
     @endif
 
-    <!-- check has any section exist -->
-    @if(count($data['sections']))
-        <!-- include website sections -->
-        @include('home._sections')
-    @endif
 
     <section class="position-relative">
         <div class="container" data-sticky-container>
@@ -20,8 +15,8 @@
                 <div class="col-lg-9">
                     <!-- Title -->
                     <div class="mb-4">
-                        <h2 class="m-0"><i class="bi bi-hourglass-top me-2"></i>سایر اخبار مهم</h2>
-                        <p>آخرین اخبار، تصاویر، فیلم ها و گزارش های ویژه</p>
+                        <h2 class="m-0"><i class="bi bi-hourglass-top me-2"></i>Today's top highlights</h2>
+                        <p>Latest breaking news, pictures, videos, and special reports</p>
                     </div>
 
                     <!-- include resent posts -->
@@ -43,8 +38,10 @@
         </div>
     </section>
 
-
-
-
+        <!-- check has any section exist -->
+        @if(count($data['sections']))
+            <!-- include website sections -->
+            @include('home._sections', ['sections' => $data['sections']])
+        @endif
 
 </x-default-layout>

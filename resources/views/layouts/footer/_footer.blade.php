@@ -19,9 +19,7 @@ Footer START -->
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary m-0">عضویت</button>
                     </div>
-                    <div class="form-text mt-2">با عضویت در خبرنامه
-                        <a href="#" class="text-decoration-underline text-reset">شرایط و قوانین</a> را خواهید پذیرفت.
-                    </div>
+
                 </form>
             </div>
         </div>

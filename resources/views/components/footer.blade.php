@@ -9,21 +9,19 @@ Footer START -->
             </div>
             <div class="col-md-5">
                 <p class="text-muted">
-                    ما در aipcdata به شما کمک می کنیم تا کسب و کار آنلاین خود را با هوش مصنوعی و هزینه ی کم بسازید.
+                    with aipcdata grow your business with the top freelancing website.
                 </p>
             </div>
             <div class="col-md-4">
                 <!-- Form -->
                 <form class="row row-cols-lg-auto g-2 align-items-center justify-content-end">
                     <div class="col-12">
-                        <input type="email" class="form-control" placeholder="ایمیل">
+                        <input type="email" class="form-control" placeholder="email">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary m-0">عضویت</button>
+                        <button type="submit" class="btn btn-primary m-0">register</button>
                     </div>
-                    <div class="form-text mt-2">با عضویت در خبرنامه
-                        <a href="#" class="text-decoration-underline text-reset">شرایط و قوانین</a> را خواهید پذیرفت.
-                    </div>
+
                 </form>
             </div>
         </div>
@@ -155,11 +153,11 @@ Footer START -->
             <div class="row align-items-center justify-content-md-between py-4">
                 <div class="col-md-6">
                     <!-- Copyright -->
-                    <div class="text-center text-md-start text-primary-hover text-muted">
-                        تمامی حقوق این سایت محفوظ می باشد
+                    <div class="text-md-start text-primary-hover text-muted">
+                        <p>© {{ date('Y') }} aipcdata. All rights reserved.</p>
                     </div>
                 </div>
-                <div class="col-md-6 d-sm-flex align-items-center justify-content-center justify-content-md-end">
+                {{-- <div class="col-md-6 d-sm-flex align-items-center justify-content-center justify-content-md-end">
                     <!-- Language switcher -->
                     <div class="dropup me-0 me-sm-3 mt-3 mt-md-0 text-center text-sm-end">
                         <a class="dropdown-toggle text-primary-hover" href="#" role="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
@@ -177,7 +175,7 @@ Footer START -->
                         <li class="nav-item"><a class="nav-link" href="#">قوانین</a></li>
                         <li class="nav-item"><a class="nav-link pe-0" href="#">کوکی</a></li>
                     </ul>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

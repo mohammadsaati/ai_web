@@ -17,7 +17,7 @@
                     @endif
                     <h1>{{ $data['post']->title }}</h1>
                 </div>
-                <p class="lead">{{ $data['post']->excerpt }}</p>
+                <p class="lead my-2 small">{{ $data['post']->excerpt }}</p>
             </div>
         </div>
     </section>
@@ -28,7 +28,7 @@
         <div class="container position-relative" data-sticky-container>
             <div class="row">
                 <!-- Left sidebar START -->
-                <div class="col-lg-2">
+                <div class="col-lg-2 p-0">
                     <div class="text-start text-lg-center mb-5" data-sticky data-margin-top="80" data-sticky-for="991">
                         <!-- Author info -->
                         <div class="position-relative">
@@ -40,7 +40,7 @@
                         </div>
                         <hr class="d-none d-lg-block">
                         <!-- Card info -->
-                        <ul class="list-inline list-unstyled">
+                        <ul class="list-inline list-unstyled p-0">
                             <li class="list-inline-item d-lg-block my-lg-2">{{ $data['post']->created_at }}</li>
                             <li class="list-inline-item d-lg-block my-lg-2">{{ $data['post']->read_time }} read</li>
                         </ul>
@@ -54,7 +54,7 @@
                     @if(count($data['relatedPosts']))
                         <!-- Related post START -->
                         <div class="mt-5">
-                            <h3 class="my-3"><i class="bi bi-symmetry-vertical me-2"></i>اخبار مشابه</h3>
+                            <h3 class="my-3"><i class="bi bi-symmetry-vertical me-2"></i>Related post</h3>
                             <div class="tiny-slider arrow-hover arrow-blur arrow-white arrow-round">
                                 <div class="tiny-slider-inner"
                                      data-autoplay="true"
@@ -94,11 +94,11 @@
                                                                 <div class="avatar avatar-xs">
                                                                     <img class="avatar-img rounded-circle" src="{{ asset('assets/images/user-avatar.avif') }}" alt="avatar">
                                                                 </div>
-                                                                <span class="ms-3">با <a href="#" class="stretched-link text-reset btn-link">{{ $relatedPost->admin->name }}</a></span>
+                                                                <span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">{{ $relatedPost->admin->name }}</a></span>
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li class="nav-item">{{ verta($relatedPost->create_at)->format('l dS F') }}</li>
+                                                    <li class="nav-item">{{ $relatedPost->created_at }}</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -117,8 +117,8 @@
                 <!-- Right sidebar START -->
                 <div class="col-lg-3">
                     <div data-sticky data-margin-top="80" data-sticky-for="991">
-                        <h4>اشتراک گذاری</h4>
-                        <ul class="nav text-white-force">
+                        <h4><b>Share this article</b></h4>
+                        <ul class="nav text-white-force p-0">
                             <li class="nav-item">
                                 <a class="nav-link icon-md rounded-circle me-2 mb-2 p-0 fs-5 bg-facebook" href="#">
                                     <i class="fab fa-facebook-square align-middle"></i>
