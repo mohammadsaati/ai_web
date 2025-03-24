@@ -34,9 +34,4 @@ class Theme
 
         return $temp;
     }
-
-    public function showName()
-    {
-        return 'mohammad';
-    }
 }
