@@ -34,4 +34,9 @@ class Theme
 
         return $temp;
     }
+
+    public function test()
+    {
+        return 'test';
+    }
 }
