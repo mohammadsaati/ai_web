@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Redis;
 
 class HomeController extends Controller
 {
-    const VIEW          =   'home';
+    const VIEW          =   'home.';
     public function __construct(public readonly HomeService $service)
     {
     }
@@ -20,9 +20,9 @@ class HomeController extends Controller
     public function home()
     {
         $data                   =   $this->service->homeData();
-        $data['title']          =   'صفحه اصلی';
+        $data['title']          =   'Home';
 
 
-        return view(self::VIEW.'.home' , compact('data'));
+        return view(self::VIEW.'home' , compact('data'));
     }
 }

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Filters\PostFilter;
 use App\Scopes\ActiveScope;
+use App\Scopes\OrderScope;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -15,14 +16,15 @@ class Post extends Model
 
     protected static function boot()
     {
-        self::addGlobalScope(new ActiveScope());
+        self::addGlobalScope(new ActiveScope);
+        self::addGlobalScope(new OrderScope);
         parent::boot();
     }
 
     protected function createdAt(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => Carbon::parse($value)->format('Y/m/d')
+            get: fn (string $value) => Carbon::parse($value)->format('M d , Y')
         );
     }
 
