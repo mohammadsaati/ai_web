@@ -30,7 +30,9 @@ class Theme
             $temp .= sprintf('<script type="text/javascript" src="%s"></script>' , $src);
 
         }
-
         return $temp;
+
+
+        
     }
 }
