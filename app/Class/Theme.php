@@ -31,7 +31,6 @@ class Theme
 
         }
 
-        
         return $temp;
     }
 }
