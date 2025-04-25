@@ -14,15 +14,24 @@ class HomeController extends Controller
     {
     }
 
+    public function home()
+    {
+        $data = $this->service->homeData();
+        $data['title'] = 'Home';
+        $data['miniPost'] = true;
+
+        return view(self::VIEW.'home', compact('data'));
+    }
+
     /*
      * show home data
      */
-    public function home()
+    public function blog()
     {
-        $data                   =   $this->service->homeData();
+        $data                   =   $this->service->blogData();
         $data['title']          =   'Home';
 
 
-        return view(self::VIEW.'home' , compact('data'));
+        return view(self::VIEW.'blog' , compact('data'));
     }
 }

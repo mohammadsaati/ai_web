@@ -46,12 +46,14 @@ return [
      */
     'js' => [
         'global'    =>  [
+            'assets/js/jquery3.7.1.js',
             'assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js',
             'assets/vendor/tiny-slider/tiny-slider-rtl.js',
             'assets/vendor/sticky-js/sticky.min.js',
             'assets/vendor/plyr/plyr.js',
             'assets/vendor/tiny-slider/tiny-slider.js',
             'assets/js/functions.js',
+            'assets/vendor/sweet-alert/sweet-alert.js',
         ] ,
 
         'link'  =>  [
