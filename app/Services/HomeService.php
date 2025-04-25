@@ -10,7 +10,16 @@ use App\Services\Service;
 
 class HomeService extends Service
 {
+
     public function homeData(): array
+    {
+        return [
+            'resentPosts'      => Post::query()->take(4)->get(),
+        ];
+    }
+
+
+    public function blogData(): array
     {
         return [
             'banners'     => Banner::query()->take(5)->get(),

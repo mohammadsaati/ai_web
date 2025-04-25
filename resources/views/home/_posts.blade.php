@@ -2,7 +2,7 @@
 
     @foreach($data['resentPosts'] as $resentPost)
         <!-- Card item START -->
-        <div class="col-sm-6">
+        <div class="{{ isset($data['miniPost']) ? 'col-sm-3' : 'col-sm-6' }}">
             <div class="card">
                 <!-- Card img -->
                 <div class="position-relative">
